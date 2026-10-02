@@ -30,7 +30,7 @@ def prompt_context() -> Context: #Takes context(ctx)
     return Context(energy=energy, mood=mood)
 
 
-def prompt_factors() -> Factors:
+def prompt_factors() -> Factors: #Factor inputs
     importance = ask_int("  Importance (1-10): ", 1, 10)
 
     urgency = ask_int("  Urgency (1-10): ", 1, 10)
