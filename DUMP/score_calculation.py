@@ -1,3 +1,4 @@
+
 def process_data(factor_value_dict, weights):
     names =  list(factor_value_dict.keys())
     #print(factor_value_dict.items())
@@ -16,7 +17,6 @@ def process_data(factor_value_dict, weights):
 def pick_best_option(scores):
     best = max(scores, key=scores.get)
     return best, scores[best] #returns the best option and the score
-
 
 
 #Future upgrade for rankings. Need to study this lambda shit aswell

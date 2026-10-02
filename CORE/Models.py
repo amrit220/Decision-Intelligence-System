@@ -3,20 +3,22 @@ from typing import Dict
 
 @dataclass(frozen=True)
 class Factors:
-    importance: int   # 1-10
-    urgency: int      # 1-10
-    effort: int       # 1-10
-    reward: int       # 1-10
+    importance: int   
+    urgency: int      
+    effort: int       
+    reward: int       
 
 
 @dataclass(frozen=True)
 class Context:
-    energy: int       # 1-10
+    energy: int       
+    mood: int
+    #available_minutes = int 
 
 
 @dataclass
 class Option:
-    option_name: str
+    option_id: str
     label: str
     factors: Factors
 
@@ -29,6 +31,7 @@ class ScoringPolicy:
     w_eff: float
     energy_sensitivity: float
     mode_name: str
+    
 
 
 @dataclass
