@@ -21,7 +21,7 @@ def ask_int(prompt: str, lo: int, hi: int) -> int:
         return value
 
 
-def prompt_context() -> Context:
+def prompt_context() -> Context: #Takes context(ctx)
 
     energy = ask_int("Energy (1-10): ", 1, 10)
 
@@ -70,7 +70,7 @@ def prompt_option(index: int) -> Option | None:
     )
 
 
-def prompt_options() -> list[Option]:
+def prompt_options() -> list[Option]: #Option count
 
     options: list[Option] = []
 
